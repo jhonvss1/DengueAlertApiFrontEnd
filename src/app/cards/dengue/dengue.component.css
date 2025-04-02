@@ -141,6 +141,8 @@
     opacity: 0.9;
     margin-top: auto;
   }
+
+  
   
   @media (max-width: 768px) {
     .cards-grid {
