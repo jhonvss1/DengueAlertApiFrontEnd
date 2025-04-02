@@ -1,0 +1,22 @@
+<div *ngFor="let alert of lastThreeWeeksAlerts" class="alert-card" [class]="getAlertLevelClass(alert.alertLevel)">
+  <div class="card-header">
+    <h2>Semana {{ formatForDisplay(alert).weekNumber }}/{{ alert.year }}</h2>
+    <span class="alert-badge">{{ formatForDisplay(alert).alertLevelText }}</span>
+  </div>
+  
+  <div class="card-body">
+    <div class="stat">
+      <span class="stat-label">Casos Estimados</span>
+      <span class="stat-value">{{ alert.estimatedCases | number }}</span>
+    </div>
+    
+    <div class="stat">
+      <span class="stat-label">Casos Notificados</span>
+      <span class="stat-value">{{ formatForDisplay(alert).reportedCases | number }}</span>
+    </div>
+  </div>
+  
+  <div class="card-footer">
+    <small>Atualizado em: {{ formatForDisplay(alert).createdAt }}</small>
+  </div>
+</div>
