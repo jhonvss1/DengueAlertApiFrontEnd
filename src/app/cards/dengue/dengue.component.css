@@ -58,7 +58,7 @@
   }
   
   .alert-card {
-    border-radius: 10px;
+    border-radius: 3rem;
     padding: 1.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     color: white;
@@ -68,8 +68,8 @@
   }
   
   .alert-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-15px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
   }
   
   .level-green {
@@ -137,7 +137,7 @@
   }
   
   .card-footer {
-    font-size: 0.8rem;
+    font-size: 1rem;
     opacity: 0.9;
     margin-top: auto;
   }
