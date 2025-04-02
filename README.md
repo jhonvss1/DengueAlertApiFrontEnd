@@ -1,27 +1,70 @@
-# DengueAlertApiFrontEnd
+# DengueAlertApiFrontEnd 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+<h2>Introdução</h2>
+API FrontEnd desenvolvida para exibir dados das semanas epidemologias dos casos de Dengue. Facilitando o entendimento do usuário quando se visualiza os dados em questão. Usa o metódo HTTP para fazer as requisições batendo no endpoint da API que já está pronta e vocês podem encontrar aqui: https://github.com/jhonvss1/DengueAlertApiBackEnd
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tecnologias usadas
 
-## Code scaffolding
+Framework (Angular na versão 16.2.16)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Cliente HTTP 
 
-## Build
+## Instalação 
+ Para fazer a utilização dessa API você deve seguir os passos abaixo: 
+````
+# Clone o repositório
+git clone https://github.com/jhonvss1/DengueAlertApiFrontEnd
+# Acesse o diretório do projeto
+cd nome-do-repositorio
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Instale as dependências
+npm install  # ou yarn install
+````
 
-## Running unit tests
+## Configuração 
+````
+API_BASE_URL = https://localhost:7024/api/Dengue/
+````
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🔌 Uso
+  Para obter dados:
+````
+  getAllAlerts(): Observable<DengueAlert[]> {
+    return this.http.get<DengueAlert[]>(this.apiUrl);
+  }
+````
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Estrutura do projeto 
+````
+├── src/
+│   ├── app/
+│   │   ├── cards/dengue/
+│   │   │   ├── dengue.component.css
+│   │   │   ├── dengue.component.html
+│   │   │   ├── dengue.component.ts
+│   │   │   ├── dengue.module.ts
+│   │   ├── model/
+│   │   │   ├── dengue-alert.ts
+│   │   ├── services/
+│   │   │   ├── dengue.service.ts
+│   │   ├── utils/
+│   │   │   ├── date-util.ts
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   ├── assets/
+│   ├── environment/
+│   │   ├── environment.ts
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   ├── styles.css
+├── .editorconfig
+├── package.json
+└── README.md
+````
+Feito por mim. Pode ficar a vontade para usá-lo e contribuir comigo neste projeto. 
