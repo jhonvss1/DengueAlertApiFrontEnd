@@ -1,7 +1,7 @@
 # DengueAlertApiFrontEnd 
 
 <h2>Introdução</h2>
-API FrontEnd desenvolvida para exibir dados das semanas epidemologias dos casos de Dengue. Facilitando o entendimento do usuário quando se visualiza os dados em questão. Usa o metódo HTTP para fazer as requisições batendo no endpoint da API que já está pronta e vocês podem encontrar aqui: link da api 
+API FrontEnd desenvolvida para exibir dados das semanas epidemologias dos casos de Dengue. Facilitando o entendimento do usuário quando se visualiza os dados em questão. Usa o metódo HTTP para fazer as requisições batendo no endpoint da API que já está pronta e vocês podem encontrar aqui: https://github.com/jhonvss1/DengueAlertApiBackEnd
 
 
 ## Tecnologias usadas
