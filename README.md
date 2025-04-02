@@ -6,7 +6,7 @@ API FrontEnd desenvolvida para exibir dados das semanas epidemologias dos casos 
 
 ## Tecnologias usadas
 
-Framework (Angular)
+Framework (Angular na versão 16.2.16)
 
 Cliente HTTP 
 
