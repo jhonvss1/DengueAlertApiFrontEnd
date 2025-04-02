@@ -55,9 +55,7 @@ export class DengueComponent implements OnInit {
     console.log('Dados após filtro:', this.lastThreeWeeksAlerts);
   }
 
-  trackById(index: number, item: DengueAlert): number {
-    return item.id; 
-  }
+
 
   formatForDisplay(alert: DengueAlert): any {
     const weekStr = alert.epidemologicalWeek.toString();

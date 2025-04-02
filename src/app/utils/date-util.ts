@@ -6,11 +6,11 @@ export class DateUtils {
   
     static getLastThreeWeeks(): number[] { 
       const weeks: number[] = [];
-      for (let i = 0; i <4; i++) {
+      for (let i = 0; i < 4; i++) {
         const date = new Date();
         date.setDate(date.getDate() - (i * 7));
         const weekStr = this.calculateEpiWeek(date);
-        weeks.push(Number(weekStr));
+        weeks.push(Number(weekStr)); // Converte para número
       }
       return weeks;
     }
