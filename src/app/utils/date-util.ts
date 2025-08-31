@@ -6,7 +6,7 @@ export class DateUtils {
   
     static getLastThreeWeeks(): number[] { 
       const weeks: number[] = [];
-      for (let i = 2; i < 5; i++  ) {
+      for (let i = 2; i < 30; i++  ) {
         const date = new Date();
         date.setDate(date.getDate() - (i * 7));
         const weekStr = this.calculateEpiWeek(date);
